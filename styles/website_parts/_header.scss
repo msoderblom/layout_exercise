@@ -1,0 +1,33 @@
+@import "../variables";
+
+header {
+  background: $color--header-1;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 0 5%;
+}
+i {
+  font-style: normal;
+}
+header i {
+  font-weight: bold;
+  background: #d8d8d8;
+  align-self: center;
+  padding: 2px 50px 2px 50px;
+}
+nav {
+  font-weight: bold;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav li {
+  padding: 0 10px 0 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
