@@ -29,9 +29,7 @@ h2 {
   font-size: 2.143rem;
   margin-top: 0;
 }
-.img-section h2 {
-  font-size: 1.79rem;
-}
+
 h3 {
   font-size: 1.8rem;
   margin: 0;
@@ -45,6 +43,10 @@ h2,
 h3 {
   font-weight: bold;
   text-align: center;
+}
+
+i {
+  font-style: normal;
 }
 
 .hero_img {
@@ -69,24 +71,6 @@ h3 {
   font-weight: bold;
 }
 
-.img-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 8% 5% 8% 5%;
-}
-.img-section h2 {
-  flex: 1 1 100%;
-}
-.img-section img {
-  margin: 0.4rem;
-  height: 27vw;
-  max-height: 165px;
-  max-width: 165px;
-}
-
-/********* About section **********/
-
 .about-img-grid img,
 .services-section img,
 .gallery-section img {
@@ -94,8 +78,6 @@ h3 {
   height: 100%;
   width: 100%;
 }
-
-/******************** Footer ************************/
 
 @media (min-width: 750px) {
   html {
@@ -113,22 +95,11 @@ h3 {
   h4 {
     font-size: 1.5rem;
   }
-  header {
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 0 5% 0 5%;
-  }
+
   .hero-text {
     flex-basis: 40%;
   }
   .hero-text p {
     font-size: 17px;
-  }
-
-  .img-section {
-    padding: 10%;
-  }
-  .img-section h2 {
-    font-size: 2.4rem;
   }
 }

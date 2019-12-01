@@ -1,0 +1,22 @@
+.img-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8% 5% 8% 5%;
+  @media (min-width: 750px) {
+    padding: 10%;
+  }
+  h2 {
+    flex: 1 1 100%;
+    font-size: 1.79rem;
+    @media (min-width: 750px) {
+      font-size: 2.4rem;
+    }
+  }
+  img {
+    margin: 0.4rem;
+    height: 27vw;
+    max-height: 165px;
+    max-width: 165px;
+  }
+}
