@@ -7,6 +7,7 @@
     padding: 10%;
   }
   h2 {
+    color: $color--complement-1;
     flex: 1 1 100%;
     font-size: 1.79rem;
     @media (min-width: 750px) {
@@ -15,8 +16,17 @@
   }
   img {
     margin: 0.4rem;
-    height: 27vw;
+    height: 26vw;
     max-height: 165px;
     max-width: 165px;
+    border: $color--background 0.3rem solid;
+    @media (min-width: 450px) {
+      height: 26vw;
+      margin: 0.6rem;
+    }
+    @media (min-width: 650px) {
+      height: 27vw;
+      margin: 0.9rem;
+    }
   }
 }

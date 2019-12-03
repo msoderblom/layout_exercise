@@ -1,7 +1,6 @@
-@import "../variables";
-
 header {
-  background: $color--header-1;
+  background: $color--main-1;
+
   display: flex;
   flex-direction: column;
   padding: 5% 5% 0 5%;
@@ -13,7 +12,7 @@ header {
   }
   i {
     font-weight: bold;
-    background: #d8d8d8;
+
     align-self: center;
     padding: 2px 50px 2px 50px;
   }
@@ -32,6 +31,7 @@ nav {
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $color--font-3;
+    letter-spacing: 1.16px;
   }
 }
