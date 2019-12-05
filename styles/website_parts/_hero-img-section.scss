@@ -1,4 +1,4 @@
-.hero_img {
+.hero-img-section {
   background: radial-gradient(
       circle at 50% 0,
       rgba(57, 73, 81, 0.85),
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: all 1s ease-in-out;
   @media (min-width: 768px) {
     background: radial-gradient(
         circle at 50% 0,
@@ -25,24 +25,35 @@
 
   @media (min-width: 990px) {
     height: 95vh;
+    justify-content: start;
   }
-}
-.hero-text {
-  text-align: center;
-  flex-basis: 80%;
-  h1,
-  p {
-    margin: 0;
-  }
-  p {
-    font-size: 16px;
-    font-weight: bold;
-    color: $color--font-4;
-    @media (min-width: 990px) {
-      font-size: 17px;
+
+  &__text-container {
+    text-align: center;
+    flex-basis: 80%;
+
+    * {
+      transition: all 1s ease-in-out;
     }
-  }
-  @media (min-width: 990px) {
-    flex-basis: 40%;
+
+    &__title {
+      margin: 0;
+    }
+    &__text {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      color: $color--font-4;
+      letter-spacing: 0.92px;
+      @media (min-width: 990px) {
+        font-size: 17px;
+      }
+    }
+    @media (min-width: 990px) {
+      flex-basis: 40%;
+      margin-inline-start: 5%;
+      margin-block-end: 10%;
+    }
   }
 }

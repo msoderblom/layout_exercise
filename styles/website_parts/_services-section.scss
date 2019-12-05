@@ -6,23 +6,26 @@
     grid-template: 1fr / 3.5fr 4fr;
     grid-gap: 10%;
 
-    & img {
+    &__picture {
       grid-row: 1/2;
     }
   }
-}
-.services-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 5% 0 5%;
-  h4 {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 750px) {
+  &__text-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 0;
-    padding-right: 25%;
+    padding: 0 5% 0 5%;
+    &__title {
+      margin-bottom: 0;
+    }
+    &__text {
+      color: $color--font-2;
+    }
+
+    @media (min-width: 750px) {
+      justify-content: center;
+      padding: 0;
+      padding-right: 25%;
+    }
   }
 }

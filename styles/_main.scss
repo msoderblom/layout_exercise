@@ -3,6 +3,9 @@
 }
 html {
   font-size: 14px;
+  @media (min-width: 990px) {
+    font-size: 15px;
+  }
 }
 
 body {
@@ -17,45 +20,8 @@ main {
   margin: 0 auto 0 auto;
   background: inherit;
 }
-section:nth-of-type(odd):not(.hero_img) {
+section:nth-of-type(odd):not(.hero-img-section) {
   background: $color--main-1;
-}
-h1 {
-  font-size: 1.9rem;
-  color: $color--complement-1;
-}
-h2 {
-  font-size: 2.143rem;
-  margin-top: 0;
-  color: $color--heading-a;
-}
-
-h3 {
-  font-size: 1.8rem;
-  margin: 0;
-  color: $color--heading-a;
-}
-h4 {
-  font-size: 1.286rem;
-  font-weight: bold;
-}
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  text-align: center;
-}
-
-i {
-  font-style: normal;
-}
-.logo {
-  font-family: "Unica One", cursive;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.96px;
-  font-size: 1.9rem;
-  color: $color--complement-1;
 }
 
 .about-img-grid img,
@@ -65,14 +31,45 @@ i {
   height: 100%;
   width: 100%;
 }
+.logo {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  @include text-properties(1.9rem, $color--complement-1, 0.96px);
+}
 
-@media (min-width: 750px) {
-  html {
-    font-size: 15px;
-  }
-  h1 {
+p {
+  @include text-properties(1rem, $color--font-1, 0.52px);
+  line-height: 1.57;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+h1 {
+  @include text-properties(1.9em, $color--complement-1, 1px);
+  @media (min-width: 768px) {
     font-size: 3.25rem;
   }
+}
+h2 {
+  @include text-properties(2.143rem, $color--heading-a, 1.11px);
+  margin-top: 0;
+}
+h3 {
+  @include text-properties(1.8rem, $color--heading-a, 0.92px);
+  margin: 0;
+}
+h4 {
+  @include text-properties(1.286rem, $color--heading-a, 0.17px);
+  font-weight: bold;
+}
+
+@media (min-width: 990px) {
   h2 {
     font-size: 3rem;
   }
@@ -80,6 +77,6 @@ i {
     font-size: 2.25rem;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }

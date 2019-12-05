@@ -13,25 +13,27 @@
       href="https://fonts.googleapis.com/css?family=Unica+One&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Travelson</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <i class="logo">Travelson</i>
-      <nav>
-        <ul>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-          <li><a href="#">Menu 4</a></li>
+      <nav class="navigation">
+        <ul class="navigation__link-list">
+          <li class="navigation__link-list__item"><a href="#">Menu 1</a></li>
+          <li class="navigation__link-list__item"><a href="#">Menu 2</a></li>
+          <li class="navigation__link-list__item"><a href="#">Menu 3</a></li>
+          <li class="navigation__link-list__item"><a href="#">Menu 4</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero_img">
-        <div class="hero-text">
-          <h1>Life is Travel</h1>
-          <p>
+      <section class="hero-img-section">
+        <div class="hero-img-section__text-container">
+          <h1 class="hero-img-section__text-container__title">
+            Life is Travel
+          </h1>
+          <p class="hero-img-section__text-container__text">
             Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Curabitur blandit tempus
             porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing.
@@ -102,7 +104,7 @@
       </section>
       <section class="about-section">
         <div class="about-text">
-          <h4>Donec id elit non mi porta gravida at eget metus.</h4>
+          <h4>Roads through wilderness</h4>
           <p>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit. Donec id elit non mi porta gravida
@@ -110,58 +112,107 @@
           </p>
         </div>
         <div class="about-img-grid">
-          <img src="https://via.placeholder.com/165" alt="placeholder" />
-          <img src="https://via.placeholder.com/165" alt="placeholder" />
-          <img src="https://via.placeholder.com/165" alt="placeholder" />
-          <img src="https://via.placeholder.com/165" alt="placeholder" />
+          <img
+            src="./images/04_about-section/road-1.jpg"
+            alt="A car drivning on a road"
+          />
+          <img
+            src="./images/04_about-section/road-2.png"
+            alt="Multiple cars on a road"
+          />
+          <img
+            src="./images/04_about-section/road-3.jpg"
+            alt="Bird's eye view of a road by the sea"
+          />
+          <img
+            src="./images/04_about-section/road-4.jpg"
+            alt="A road going through a desert-like mountain area"
+          />
         </div>
       </section>
       <section class="services-section">
-        <div class="services-text">
-          <h4>Donec id elit non mi porta sage at eget</h4>
-          <p>
+        <div class="services-section__text-container">
+          <h4 class="services-section__text-container__title">
+            Donec id elit non mi porta sage at eget
+          </h4>
+          <p class="services-section__text-container__text">
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit. Donec id elit non mi porta gravida
             at eget metus.
           </p>
-          <h4>Donec id elit non mi porta sage at eget</h4>
-          <p>
+          <h4 class="services-section__text-container__title">
+            Donec id elit non mi porta sage at eget
+          </h4>
+          <p class="services-section__text-container__text">
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit. Donec id elit non mi porta gravida
             at eget metus.
-          </p>
-        </div>
-        <img src="https://via.placeholder.com/620x540" alt="placeholder" />
-      </section>
-      <section class="gallery-section">
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <div class="gallery-text">
-          <h4>Donec id elit non mi porta hazing</h4>
-          <p>
-            Duis mollis, est non commodo luctus, nisi erat patata porttitor
-            ligula, eget lacinia odio sem nec elit. Pator doctrus minoior lace i
-            dono. Yonec id elit non mi porta gravida at eget metus. Patrul li
-            leiche dolic petrolium.
           </p>
         </div>
 
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
-        <img src="https://via.placeholder.com/165" alt="placeholder" />
+        <picture class="services-section__picture">
+          <source
+            media="(min-width: 990px)"
+            srcset="./images/05_services-section/tundra-large.jpg"
+          />
+          <img
+            src="./images/05_services-section/tundra-small.jpg"
+            alt="A picure of the tundra"
+          />
+        </picture>
+      </section>
+      <section class="gallery-section">
+        <img
+          src="./images/06_gallery-section/collage-1.jpg"
+          alt="placeholder"
+        />
+        <img
+          src="./images/06_gallery-section/collage-2.jpg"
+          alt="placeholder"
+        />
+        <img
+          src="./images/06_gallery-section/collage-3.jpg"
+          alt="placeholder"
+        />
+        <img
+          src="./images/06_gallery-section/collage-4.jpg"
+          alt="placeholder"
+        />
+        <div class="gallery-text">
+          <h4>Don’t miss the next adventure</h4>
+          <p>
+            Duis mollis, est non commodo luctus, nisi erat patata porttitor
+            ligula, eget lacinia odio sem nec elit. Pator doctrus minoior lace i
+            dono. Patrul li leiche dolic petrolium.
+          </p>
+        </div>
+
+        <img
+          src="./images/06_gallery-section/collage-5.jpg"
+          alt="placeholder"
+        />
+        <img
+          src="./images/06_gallery-section/collage-7.jpg"
+          alt="placeholder"
+        />
+        <img
+          src="./images/06_gallery-section/collage-6.jpg"
+          alt="placeholder"
+        />
+        <img
+          src="./images/06_gallery-section/collage-8.jpg"
+          alt="placeholder"
+        />
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <i class="logo">Travelson</i>
-      <nav>
-        <ul>
-          <li>Menu 1</li>
-          <li>Menu 2</li>
-          <li>Menu 3</li>
-          <li>Menu 4</li>
+      <nav class="navigation">
+        <ul class="navigation__link-list">
+          <li class="navigation__link-list__item"><a href="#">Menu 1</a></li>
+          <li class="navigation__link-list__item"><a href="#">Menu 2</a></li>
+          <li class="navigation__link-list__item"><a href="#">Menu 3</a></li>
+          <li class="navigation__link-list__item"><a href="#">Menu 4</a></li>
         </ul>
       </nav>
     </footer>
