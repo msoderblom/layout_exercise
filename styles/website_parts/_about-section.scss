@@ -19,29 +19,29 @@ $breakpoint--medium: 650px;
     grid-gap: 10vw;
     padding: 8%;
   }
+
+  img {
+    @extend %img-settings;
+  }
 }
 .about-text {
   display: flex;
   flex-direction: column;
-
   h4 {
     margin: 0;
   }
   p {
     margin: 8px 0 0 0;
   }
-
   @media (min-width: $breakpoint--medium) {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 0;
   }
   @media (min-width: 990px) {
     padding: 0 10% 0 10%;
   }
 }
-
 .about-img-grid {
   display: grid;
   grid-template: repeat(2, minmax(42.5vw, 165px)) / repeat(

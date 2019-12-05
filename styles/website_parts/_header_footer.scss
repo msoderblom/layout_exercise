@@ -1,11 +1,10 @@
 .main-header {
   background: $color--main-1;
-
   display: flex;
   flex-direction: column;
   padding: 5% 5% 0 5%;
 
-  @media (min-width: 750px) {
+  @media (min-width: 768px) {
     justify-content: space-between;
     flex-direction: row;
     padding: 0 5% 0 5%;
@@ -22,28 +21,44 @@
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 
     &__item {
-      padding: 0 10px 0 10px;
+      padding: 0 2% 0 2%;
+
+      @media (min-width: 768px) {
+        padding: 0 10px 0 10px;
+      }
+
       a {
         text-decoration: none;
-        color: $color--font-3;
-        letter-spacing: 1.16px;
+        @include text-properties(1rem, $color--font-3, 1.16px);
+        @media (min-width: 990px) {
+          letter-spacing: 1.33px;
+          font-size: 16px;
+        }
+        &:hover {
+          transition: color 0.5s ease-in;
+          color: $color--complement-1;
+        }
       }
     }
   }
 }
-
 .main-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: $color--main-1;
+  background: $color--complement-3;
   padding: 35px 5% 25px 5%;
   .navigation {
-    flex: 1 1 50%;
+    flex: 1 1;
+    inline-size: 100%;
     margin-block-start: 20px;
+    @media (min-width: 768px) {
+      inline-size: unset;
+    }
   }
 }

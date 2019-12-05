@@ -3,3 +3,15 @@
   color: $color;
   letter-spacing: $spacing;
 }
+
+%heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+%img-settings {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+}

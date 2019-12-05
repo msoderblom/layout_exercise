@@ -3,8 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 8% 5% 8% 5%;
-  @media (min-width: 750px) {
-    padding: 10%;
+  @media (min-width: 768px) {
+    padding: 6% 10% 6% 10%;
   }
   h2 {
     color: $color--complement-1;
@@ -21,7 +21,6 @@
     max-width: 165px;
     border: $color--background 0.3rem solid;
     @media (min-width: 450px) {
-      height: 26vw;
       margin: 0.6rem;
     }
     @media (min-width: 650px) {

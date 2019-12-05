@@ -1,11 +1,14 @@
 .article-section {
   display: flex;
   flex-direction: column;
-  padding: 15% 5% 10% 5%;
+  padding: 9% 5% 10% 5%;
   transition: all 1s ease-in-out;
 
   @media (min-width: 990px) {
     padding: 5% 10% 5% 10%;
+  }
+  img {
+    @extend %img-settings;
   }
 }
 
@@ -14,15 +17,21 @@ article {
   flex-direction: column;
   img {
     height: 58vw;
+    @media (min-width: 768px) {
+      flex: 1 1 50%;
+      height: auto;
+    }
   }
   @media (min-width: 768px) {
     flex-direction: row;
     &:nth-of-type(odd) {
       flex-flow: row-reverse;
     }
-    img {
-      flex: 1 1 50%;
-      height: auto;
+  }
+  & + article {
+    margin-top: 35px;
+    @media (min-width: 990px) {
+      margin-top: 80px;
     }
   }
 
@@ -42,13 +51,6 @@ article {
       }
     }
   }
-
-  @media (min-width: 990px) {
-    img {
-      flex: 1 1 50%;
-      height: auto;
-    }
-  }
 }
 .article-text {
   text-align: center;
@@ -65,35 +67,7 @@ article {
     padding: 0 8% 0 8%;
     flex: 1 1 50%;
   }
-
   p {
     margin-top: 0;
   }
 }
-article + article {
-  margin-top: 45px;
-  @media (min-width: 768px) {
-    margin-top: 30px;
-  }
-}
-
-/*
-  @media () {
-    .article-section {
-      padding: 5% 10% 5% 10%;
-    }
-    article {
-      flex-direction: row;
-    }
-    article img {
-      flex: 1 1 50%;
-      height: auto;
-    }
-    article:nth-of-type(odd) {
-      flex-flow: row-reverse;
-    }
-    article + article {
-      margin-top: 30px;
-    }
-  }
-*/

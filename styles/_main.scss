@@ -7,7 +7,6 @@ html {
     font-size: 15px;
   }
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -16,20 +15,14 @@ body {
   background: $color--background;
 }
 main {
-  max-width: 1440px;
-  margin: 0 auto 0 auto;
   background: inherit;
 }
 section:nth-of-type(odd):not(.hero-img-section) {
   background: $color--main-1;
 }
-
-.about-img-grid img,
-.services-section img,
-.gallery-section img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+section:not(.hero-img-section) {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
 }
 .logo {
   font-family: "Unica One", cursive;
@@ -38,35 +31,31 @@ section:nth-of-type(odd):not(.hero-img-section) {
   font-style: normal;
   @include text-properties(1.9rem, $color--complement-1, 0.96px);
 }
-
 p {
   @include text-properties(1rem, $color--font-1, 0.52px);
   line-height: 1.57;
 }
-
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  text-align: center;
-}
 h1 {
+  @extend %heading;
   @include text-properties(1.9em, $color--complement-1, 1px);
   @media (min-width: 768px) {
     font-size: 3.25rem;
   }
 }
 h2 {
+  @extend %heading;
   @include text-properties(2.143rem, $color--heading-a, 1.11px);
   margin-top: 0;
 }
 h3 {
+  @extend %heading;
   @include text-properties(1.8rem, $color--heading-a, 0.92px);
   margin: 0;
 }
 h4 {
   @include text-properties(1.286rem, $color--heading-a, 0.17px);
   font-weight: bold;
+  text-align: start;
 }
 
 @media (min-width: 990px) {
